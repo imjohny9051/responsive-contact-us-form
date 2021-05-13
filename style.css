@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.header {
+  max-width: 800px;
+}
+.header h2 {
+  text-align: center;
+  color: #fff;
+}
+.contactInfo {
+  display: flex;
+  justify-content: space-around;
+}
+.fas {
+  color: #00bcd4;
+  font-size: 2em;
+}
+.box {
+  padding: 20px;
+  display: flex;
+}
+.text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+  color: #fff;
+}
+.text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+.divider {
+  width: 2px;
+  height: 80px;
+  margin: 6px 0;
+  background: #00bcd4;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.contactForm {
+  width: 45%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+input, textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #333;
+}
+input:focus ~ span,
+input:valid ~ span,
+textarea:focus ~ span,
+textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+input[type="submit"] {
+  width: 100%;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+input[type="submit"]:hover {
+  background: #0398ab;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+}
+.socialMediaLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socialMediaLinks h3 {
+  color: #fff;
+  padding: 10px;
+}
+.social-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+.facebook-btn {
+  color: #fff;
+  background: #3b5998;
+}
+.twitter-btn {
+  color: #03a9f4;
+  background: #fff;
+}
+.linkedin-btn {
+  color: #fff;
+  background: #007ab9;
+}
+.divider2 {
+  width: 2px;
+  height: 150px;
+  margin: 6px 0;
+  background: #fff;
+}
+
+@media (max-width: 991px) {
+  main {
+    padding: 10px 30px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .contactForm {
+    width: 100%;
+  }
+  .contactInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider {
+    height: 2px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .divider2 {
+    height: 2px;
+    width: 250px;
+    margin: 20px 0;
+  }
+}
